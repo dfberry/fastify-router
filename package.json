@@ -1,0 +1,31 @@
+{
+  "name": "fastify-router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "ts-node --files ./src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfberry/fastify-router.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfberry/fastify-router/issues"
+  },
+  "homepage": "https://github.com/dfberry/fastify-router#readme",
+  "dependencies": {
+    "@types/fastify-static": "^2.2.1",
+    "@types/node": "^13.7.7",
+    "fastify": "^2.12.1",
+    "fastify-blipp": "^2.1.0",
+    "fastify-plugin": "^1.6.1",
+    "fastify-static": "^2.6.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3"
+  }
+}
