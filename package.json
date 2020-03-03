@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "ts-node --files ./src/index.ts"
+    "dev": "ts-node-dev --files ./src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "fastify-plugin": "^1.6.1",
     "fastify-static": "^2.6.0",
     "ts-node": "^8.6.2",
+    "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "^3.8.3"
   }
 }

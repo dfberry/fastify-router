@@ -12,6 +12,16 @@ const server: fastify.FastifyInstance<
 server.register(fastifyBlipp);
 server.register(statusRoutes);
 
+
+const path = require('path')
+server.register(require('fastify-static'), {
+    root: path.join(__dirname, 'public'),
+    prefix: '/app/', // optional: default '/'
+  })
+  server.get('/app/test1', function (req, reply) {
+    reply.sendFile('test1.html') // serving path.join(__dirname, 'public', 'myHtml.html') directly
+  })
+
 const start = async () => {
   try {
     await server.listen(3000, "0.0.0.0");
